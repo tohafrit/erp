@@ -1,0 +1,190 @@
+.documentation-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.menu-side {
+    width: 400px;
+    flex-grow: 1;
+}
+.content-side {
+    flex-grow: 3;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+.content-side img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+.documentation__header_title {
+    float: left;
+    font-size: large;
+    text-transform: uppercase;
+    margin: 10px 10px 0 30px;
+    padding: 10px;
+}
+.documentation__sub-sidebar_content {
+    padding: 0;
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.documentation__sub-sidebar_search-menu-item-list {
+    height: 60px;
+    padding: 14px 10px 10px;
+    background: #F2F5F8;
+}
+.documentation__sub-sidebar_content_tree-container {
+    flex-grow: 1;
+}
+.documentation__workarea {
+    background-color: #fcfdff;
+    height: calc(100vh - 58px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    vertical-align: top;
+    position: relative;
+}
+.documentation__navigation {
+    height: 60px;
+    background: #F2F5F8;
+    display: flex;
+}
+.documentation__navigation-left {
+    width: 50%;
+    display: flex;
+}
+.documentation__navigation-right {
+    width: 50%;
+}
+.documentation__navigation_element {
+    line-height: 60px;
+    margin: 0 5px; !important;
+}
+.documentation__navigation_text-span {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #93A7B3;
+}
+.documentation__navigation_button {
+    background-color: #DEE3E8 !important;
+}
+.documentation__navigation_button > i {
+    color: #315D84;
+}
+.documentation__navigation_blue-button {
+    background-color: #315D84 !important;
+}
+.documentation__navigation_blue-button > i {
+    color: #DEE3E8;
+}
+.documentation__navigation_inactive-button {
+    background-color: #DEE3E8 !important;
+}
+.documentation__navigation_inactive-button > i {
+    color: white;
+}
+.documentation__navigation_search-content_div {
+    top: 14px;
+    right: 10px;
+    float: right;
+}
+.documentation__navigation_search-content_div > input {
+    width: 300px;
+}
+.documentation__navigation_search-content_button {
+    background-color: #315D84 !important;
+}
+.documentation__navigation_search-content_button > i {
+    color: #DEE3E8;
+}
+.documentation__breadcrumbs-line {
+    display: flex;
+    padding: 10px 15px 10px 15px;
+}
+.documentation__print {
+    color: #93A7B3;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+}
+.documentation__print > i {
+    margin: 0 !important;
+}
+.documentation__content {
+    position: relative;
+    padding: 10px 10px 10px 15px;
+    width: 100%;
+}
+.documentation__content_text h1 {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #315D84;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.documentation__content_text p {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+.documentation__content_text_keyword {
+    color: #315D84;
+    background-color: yellow;
+}
+.documentation__content hr {
+    border: none;
+    color: #93A7B3;
+    background-color: #93A7B3;
+    height: 2px;
+    margin-bottom: 24px;
+}
+.documentation__content_see-also h2 {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #315D84;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.documentation__content_see-also ul {
+    margin-left: 15px;
+    margin-bottom: 24px;
+}
+.documentation__content_see-also li {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #315D84;
+    text-align: left;
+}
+.admin_documentation__header {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.admin_documentation__header_title {
+    font-size: 20px;
+    color: #3a444d;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+}
+.admin_documentation__header_buttons {
+    padding: 0 0 0 15px;
+}
+.admin_documentation__table {
+    margin-bottom: 30px;
+}

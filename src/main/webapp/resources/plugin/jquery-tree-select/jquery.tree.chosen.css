@@ -1,0 +1,65 @@
+.tree-chosen__container-main {
+    position:relative;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    background: white;
+}
+.tree-chosen__tree-container {
+    position: absolute;
+    padding: 10px;
+    left: -1px;
+    height: 100px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    background: white;
+    overflow: hidden;
+    min-width: 100px;
+    z-index: 2;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.tree-chosen_search-container {
+    margin-bottom: 10px;
+    height: 30px;
+    float: left;
+    width: 100%;
+}
+.tree-chosen__scroll-container {
+    overflow: auto;
+    float: left;
+    width: 100%;
+    height: calc(100% - 40px);
+    white-space: nowrap;
+}
+.tree-chosen__container-main:hover {
+    border-color: #287fc3;
+}
+.tree-chosen__container-element {
+    display: inline-block;
+    position: relative;
+    margin: 3px;
+    padding: 4px 4px 4px 8px;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    max-width: 100%;
+    background-color: #e8e8e8;
+    background-image: none;
+    color: rgba(0,0,0,.6);
+    text-transform: none;
+    font-weight: 700;
+    line-height: 17px;
+    cursor: default;
+    -webkit-box-shadow: 0 0 0 1px rgba(34,36,38,.15) inset;
+    box-shadow: 0 0 0 1px rgba(34,36,38,.15) inset;
+}
+.tree-chosen__container-element > i {
+    cursor: pointer;
+    color: #aaa;
+}
+.tree-chosen__container-element > i:hover {
+    color: rgba(0,0,0,.87);
+}
+.tree-chosen__container-element > span {
+    color: rgba(34, 34, 34, 0.79);
+    word-wrap: break-word;
+}

@@ -1,0 +1,8 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
+    <deployment>
+        <!-- указывает где при деплоее брать зависимости -->
+        <dependencies>
+            <module name="org.hibernate" slot="5.3"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

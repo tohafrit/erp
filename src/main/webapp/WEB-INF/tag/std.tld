@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    <description>JSTL std tag</description>
+    <display-name>JSTL std</display-name>
+    <tlib-version>1.1</tlib-version>
+    <short-name>std</short-name>
+    <uri>/WEB-INF/tag/std</uri>
+    <tag>
+        <description>
+            Этот тэг делает преобразование boolean значения в текстовое представление
+        </description>
+        <name>boolean</name>
+        <tag-class>ru.korundm.helper.tag.BooleanTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Значение boolean</description>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Использовать картинку</description>
+            <name>image</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <description>Текст для true</description>
+            <name>ttext</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Текст для false</description>
+            <name>ftext</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Языковой ключ для true</description>
+            <name>tbound</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description>Языковой ключ для false</description>
+            <name>fbound</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>
+            Этот тэг формирует список с выбором двух значений да или нет
+        </description>
+        <name>trueOrFalse</name>
+        <tag-class>ru.korundm.helper.tag.TrueOrFalseTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Выбрать правда или ложь</description>
+            <name>name</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Значение</description>
+            <name>value</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <description>
+            Этот тэг формирует html иерархический список опций (для обработки tree-chosen) для плагина jquery.tree.chosen.js
+        </description>
+        <name>treeChosen</name>
+        <tag-class>ru.korundm.helper.tag.TreeChosen</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <description>Иерархический список</description>
+            <name>hierarchyList</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.Collection</type>
+        </attribute>
+        <attribute>
+            <description>Выбранный элемент/Список элементов</description>
+            <name>selectedItems</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.Object</type>
+        </attribute>
+    </tag>
+    <tag>
+        <description>
+            Этот тэг допускает блок кода, если пользователь имеет переданный ключ привелегии
+        </description>
+        <name>security</name>
+        <tag-class>ru.korundm.helper.tag.SecurityTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Ключ привелегии</description>
+            <name>key</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <function>
+        <name>escapeJS</name>
+        <function-class>org.apache.commons.text.StringEscapeUtils</function-class>
+        <function-signature>java.lang.String escapeEcmaScript(java.lang.String)</function-signature>
+    </function>
+</taglib>

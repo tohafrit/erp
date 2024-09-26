@@ -1,0 +1,16 @@
+.root__header {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.root__header_title {
+    font-size: 20px;
+    color: #3a444d;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+}
+.root__header_buttons {
+    padding: 0 0 0 15px;
+}
+.root__table-container {
+    height: calc(100vh - 120px);
+}

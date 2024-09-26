@@ -1,0 +1,89 @@
+/* Общее */
+.tabulator {
+    font-size: 11px !important;
+}
+/* Контейнер заголовка */
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
+    font-size: 12px !important;
+    color: #315c83 !important;
+    letter-spacing: 0.03rem !important;
+}
+/* Цвет заголовков при наведении */
+.tabulator-col.tabulator-sortable:hover {
+    background-color: #f3f2f2 !important;
+}
+/* Размер сообщения отсутствия записей в таблице */
+.tabulator .tabulator-tableHolder .tabulator-placeholder span {
+    font-size: 16px !important;
+    color: #aaa;
+    font-weight: unset;
+}
+/* Подсветка пункта контекстного меню при наведении */
+.tabulator-menu-item:not(.tabulator-menu-item-disabled):hover {
+    background: #cce2ff !important;
+}
+/* Стили лоадера таблицы */
+.tabulator .tabulator-loader {
+    background: unset !important;
+}
+.tabulator .tabulator-loader-msg {
+    all: unset !important;
+}
+.tabulator .tabulator-loading {
+    all: unset !important;
+}
+/* Стиль для ячейки с номером  */
+.tabulator .tabulator-row-number-cell {
+    color: gray;
+    font-weight: bold;
+}
+/* Стиль границ для ячейки */
+.tabulator .tabulator-cell {
+    border-right: 1px solid #dee2e6;
+}
+/* Стиль кнопки раскрытия/свертывания древа */
+.tabulator-row .tabulator-cell .tabulator-data-tree-control {
+    background: unset !important;
+    margin-bottom: 3px;
+    border: 1px solid grey;
+}
+.tabulator-row .tabulator-cell .tabulator-data-tree-branch {
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.tabulator-row .tabulator-cell .tabulator-data-tree-control .tabulator-data-tree-control-expand,
+.tabulator-row .tabulator-cell .tabulator-data-tree-control .tabulator-data-tree-control-expand:after,
+.tabulator-row .tabulator-cell .tabulator-data-tree-control .tabulator-data-tree-control-collapse:after {
+    background: grey;
+}
+/* Стиль группировки */
+.tabulator-row.tabulator-group {
+    color: grey;
+    padding: 6px;
+    border-top: unset;
+    border-bottom: 1px solid #dee2e6;
+}
+.tabulator-row.tabulator-group.tabulator-group-visible .tabulator-arrow {
+    border-top: 5px solid grey;
+    border-bottom: 1px;
+    margin-bottom: 3px;
+}
+.tabulator-row.tabulator-group:hover {
+    background-color: #f3f2f2 !important;
+}
+/* Стиль строк выбора */
+.tabulator-row.tabulator-selected {
+    background-color: #e8edff !important;
+}
+.tabulator-row.tabulator-selected:hover {
+    background-color: #e0e7ff !important;
+}
+/* Корректировка стилей компактной таблицы */
+.tabulator.table-sm .tabulator-header .tabulator-col .tabulator-col-content {
+    padding: .4rem !important;
+}
+/* Стили блока переключения страниц */
+.tabulator .tabulator-footer .tabulator-page {
+    margin: 0;
+    padding: 4px 8px;
+}

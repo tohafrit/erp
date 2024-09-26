@@ -1,0 +1,520 @@
+/* list */
+.list__header {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.list__header_title {
+    font-size: 20px;
+    color: #3a444d;
+    font-weight: bold;
+    padding: 3px 0 0 0;
+}
+.list__header_buttons {
+    padding: 5px 0 0 15px;
+}
+.list__btn-column-trigger {
+    position: relative;
+}
+.list__trigger-column-container {
+    position: absolute !important;
+    z-index: 11;
+    left: 0;
+    top: 22px;
+}
+.list__table-block {
+    height: calc(100% - 65px);
+    padding: 0 5px 0 5px;
+    overflow: auto;
+    position: absolute;
+    width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* detail */
+.detail__btn-product-list {
+    margin: 0 0 7px 0 !important;
+}
+.detail__header {
+    display: inline-flex;
+    margin: 0 0 0 20px;
+}
+.detail__header_title {
+    font-size: 17px;
+    font-weight: bold;
+}
+.detail__container {
+    display: flex;
+}
+.detail__btn-menu {
+    height: fit-content;
+    height: -moz-fit-content;
+}
+.detail__btn-menu-close {
+    margin: 5px !important;
+    position: absolute;
+    z-index: 2;
+}
+.detail__menu {
+    position: relative;
+    overflow-x: auto;
+    max-height: calc(100vh - 150px);
+    margin: 0 0 0 0 !important;
+    height: fit-content;
+    height: -moz-fit-content;
+    min-width: 250px;
+}
+.detail__content {
+    flex: 1;
+    margin: 0 0 0 10px;
+}
+
+/* detail comment */
+.detail_comment__buttons {
+    margin: 0 0 5px 0 !important;
+}
+.detail_comment__table-block {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100vh - 170px);
+}
+.detail_comment__table-wrap {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    padding: 0 10px 0 0;
+}
+
+/* detail comment filter */
+.detail_comment_filter__main {
+    width: 99%;
+    display: none;
+}
+
+/* detail general */
+.detail_general__main {
+    height: calc(100vh - 145px);
+    overflow-y: auto;
+}
+.detail_general__table {
+    font-size: 11px !important;
+}
+.detail_general__table td:first-child {
+    width: 15%;
+}
+.detail_general__btn-edit {
+    margin: 0 10px 0 10px !important;
+}
+
+/* detail occurrence */
+.detail_occurrence__buttons {
+    margin: 0 0 5px 0 !important;
+}
+.detail_occurrence__table-block {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100vh - 170px);
+    display: flex;
+    flex-direction: column;
+}
+.detail_occurrence__table-wrap {
+    width: 100%;
+    max-height: 100%;
+    padding: 0 10px 0 0;
+    flex-grow: 1;
+    display: contents;
+}
+.detail_occurrence__table {
+    width: calc(100vw - 580px);
+    height: 100%;
+}
+
+/* detail occurrence filter */
+.detail_occurrence_filter__main {
+    width: calc(100% - 1px);
+    display: none;
+}
+
+/* detail specification */
+.detail_specification__main {
+    height: calc(100vh - 145px);
+    overflow: auto;
+    padding: 0 5px 5px 5px;
+}
+.detail_specification__version-container {
+    display: flex;
+    max-width: 900px;
+}
+.detail_specification__version-label {
+    font-weight: bold;
+    padding: 7px 10px 10px 0;
+}
+.detail_specification__version-select {
+    width: 100%;
+}
+.detail_specification__version-select div.text {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+}
+.detail_specification__btn-grp-version {
+    height: 30px !important;
+    margin: 2px 0 0 5px !important;
+}
+
+/* detail specification info */
+.detail_specification_info__version-info {
+    display: flex;
+}
+.detail_specification_info__version-info > div {
+    padding: 5px 10px 5px 0;
+}
+.detail_specification_info__spec-table-buttons {
+    margin: 0 0 5px 0 !important;
+    display: inline-flex;
+}
+.detail_specification_info__spec-buttons {
+    margin: 0 0 0 20px !important;
+    display: inline-flex;
+}
+.detail_specification_info__input-excel-import,
+.detail_specification_info__import-detail {
+    display: none;
+}
+.detail_specification_info__spec-table-block {
+    height: calc(100vh - 260px);
+    display: flex;
+    flex-direction: column;
+}
+.detail_specification_info__spec-table-main-block {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+}
+.detail_specification_info__spec-table-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.detail_specification_info__spec-table-sub-block {
+    border-top: grey solid 1px;
+    min-height: 50px;
+    height: 250px;
+    display: none;
+}
+.detail_specification_info__btn-close-sub-block {
+    margin: 5px !important;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+.detail_specification_info__sub-block-content {
+    height: 100%;
+    width: calc(100% - 25px);
+}
+.detail_specification_info__launch-block {
+    display: inline;
+    margin: 0 0 0 50px;
+}
+.detail_specification_info__launch-select {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 80px;
+}
+.detail_specification_info__table-button-block {
+    margin: 0 0 5px 0 !important;
+}
+
+/* detail specification info comparison */
+.detail_specification_info_comparison__positive {
+    background-color: #a3c293;
+    color: #2c662d;
+}
+.detail_specification_info_comparison__negative {
+    background-color: #e0b4b4;
+    color: #9f3a38;
+}
+.detail_specification_info_comparison__statistics {
+    display: none;
+    margin: 15px 0;
+}
+.detail_specification_info_comparison_filter__comparison-form {
+    margin: 15px 0;
+}
+
+/* detail specification info comparison select */
+.detail_specification_info_comparison_select__filter-form {
+    margin: 0 0 10px 0 !important;
+    display: none;
+}
+.detail_specification_info_comparison_select__filter-form div.column.field {
+    padding: 7px !important;
+    margin: 0 !important;
+}
+.detail_specification_info_comparison_select__btn-filter {
+    margin: 0 0 3px 0 !important;
+}
+
+/* detail specification info edit-spec-item */
+.detail_specification_info_edit-spec-item__position-table {
+    width: 100%;
+}
+.detail_specification_info_edit-spec-item__position-table td {
+    padding: 5px 0 0 5px;
+}
+.detail_specification_info_edit-spec-item__cell-letter {
+    width: 180px;
+}
+.detail_specification_info_edit-spec-item__cell-remove {
+    vertical-align: middle;
+    width: 1%;
+}
+
+/* detail specification info list-spec-copy */
+.detail_specification_info_list-spec-copy__filter-form {
+    margin: 0 0 10px 0 !important;
+    display: none;
+}
+.detail_specification_info_list-spec-copy__filter-form div.column.field {
+    padding: 7px !important;
+    margin: 0 !important;
+}
+.detail_specification_info_list-spec-copy__btn-filter {
+    margin: 0 0 3px 0 !important;
+}
+.detail_specification_info_list-spec-copy__version {
+    display: none;
+}
+.detail_specification_info_list-spec-copy__version-select div.ui.dropdown {
+    width: 70%;
+}
+
+/* detail specification info position */
+.detail_specification_info_position__header {
+    display: flex;
+    margin: 0 0 5px 0;
+}
+.detail_specification_info_position__header_title {
+    font-size: 14px;
+    color: #3a444d;
+    font-weight: bold;
+    margin: 10px 10px 0 0 !important;
+}
+.detail_specification_info_position__table-wrap {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+/* detail specification info replacement */
+.detail_specification_info_replacement__header {
+    display: flex;
+    margin: 0 0 5px 0;
+}
+.detail_specification_info_replacement__header_title {
+    font-size: 14px;
+    color: #3a444d;
+    font-weight: bold;
+    margin: 10px 10px 0 0 !important;
+}
+.detail_specification_info_replacement__table_buttons {
+    margin: 8px 0 5px 0 !important;
+}
+.detail_specification_info_replacement__table-wrap {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+/* detail specification info replacement add-component */
+.detail_specification_info_replacement_add-component__btn-filter {
+    margin: 10px 0 10px 0 !important;
+}
+
+/* detail specification info spec-add-component */
+.detail_specification_info_spec-add-component__filter-form {
+    margin: 0 0 10px 0 !important;
+    display: none;
+}
+.detail_specification_info_spec-add-component__filter-form div.column.field {
+    padding: 7px !important;
+    margin: 0 !important;
+}
+.detail_specification_info_spec-add-component__btn-filter {
+    margin: 10px 0 3px 0 !important;
+}
+
+/* detail specification info spec-replacement-component */
+.detail_specification_info_spec-replacement-component__btn-filter {
+    margin: 10px 0 10px 0 !important;
+}
+
+/* detail structure */
+.detail_structure__main {
+    height: calc(100vh - 145px);
+    overflow: auto;
+    padding: 0 5px 5px 5px;
+}
+.detail_structure__version-container {
+    display: flex;
+    max-width: 900px;
+}
+.detail_structure__version-label {
+    font-weight: bold;
+    padding: 7px 10px 10px 0;
+}
+.detail_structure__version-select {
+    width: 100%;
+}
+.detail_structure__version-select div.text {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+}
+.detail_structure__btn-grp-version {
+    height: 30px !important;
+    margin: 2px 0 0 5px !important;
+}
+
+/* detail structure info */
+.detail_structure_info__version-info {
+    display: flex;
+}
+.detail_structure_info__version-info > div {
+    padding: 5px 10px 5px 0;
+}
+.detail_structure_info__tree-table-block {
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+    height: calc(100vh - 265px);
+}
+.detail_structure_info__tree-table-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+}
+.detail_structure_info__tree-table-buttons {
+    margin: 0 0 15px 0 !important;
+    display: inline-block;
+}
+.detail_structure_info__launch-block {
+    display: inline;
+    margin: 0 0 0 30px;
+}
+.detail_structure_info__launch-select {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 80px;
+}
+.detail_structure_info__producer-block {
+    display: inline;
+    margin: 0 0 0 30px;
+}
+.detail_structure_info__producer-select {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 500px;
+}
+
+/* detail structure info list-add */
+.detail_structure_info_list-add__btn-filter {
+    margin: 10px 0 10px 0 !important;
+}
+
+.detail_documentation__table-wrap {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100vh - 145px);
+}
+
+/* detail decipherment */
+.detail_decipherment__period-table {
+    width: auto !important;
+}
+.detail_decipherment__period-title {
+    margin-bottom: 10px;
+}
+.detail_decipherment__table_buttons {
+    margin: 0 0 5px 0;
+}
+
+/* detail decipherment period */
+.detail_decipherment_period__buttons {
+    margin: 0 0 5px 0;
+}
+
+/* decipherment period edit */
+.decipherment_period_edit__plan-period-name, .decipherment_period_edit__report-period-name {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+/* decipherment period edit plan period */
+.decipherment_period_edit_plan-period__buttons {
+    margin: 0 0 10px 0;
+}
+
+/* decipherment edit form9 */
+.decipherment_edit_form9__table {
+    display: none;
+    margin: 10px 0 0 0;
+}
+.decipherment_edit_form9__total-table {
+    width: 60%;
+}
+.decipherment_edit_form9__justification-name, .decipherment_edit_form9__lab-intensity-name {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+/* decipherment edit form18 */
+.decipherment_edit_form18__review-justification-name, .decipherment_edit_form18__research-justification-name {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+/* decipherment edit form9 labour */
+.decipherment_edit_form9_labour__buttons {
+    margin: 0 0 10px 0;
+}
+
+/* decipherment edit form1 customer */
+.decipherment_edit_form1_customer__buttons {
+    margin: 0 0 10px 0;
+}
+
+/* decipherment edit form9 justification */
+.decipherment_edit_form9_justification__buttons {
+    margin: 0 0 10px 0;
+}
+
+/* decipherment edit form18 review justification */
+.decipherment_edit_form18_review-justification__buttons {
+    margin: 0 0 10px 0;
+}
+
+/* decipherment edit form18 research justification */
+.decipherment_edit_form18_research-justification__buttons {
+    margin: 0 0 10px 0;
+}
+
+/* decipherment product invoice */
+.decipherment_product_invoice__total-block {
+    margin: 15px 0 0 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+.decipherment_product_invoice__total-block > div {
+    margin: 5px 0 0 0;
+}
+.decipherment_product_invoice__total-block span {
+    font-weight: bold !important;
+}

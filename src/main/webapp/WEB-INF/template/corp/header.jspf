@@ -1,0 +1,148 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="javatime" uri="http://sargue.net/jsptags/time" %>
+<%@ taglib prefix="std" uri="/WEB-INF/tag/std" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><fmt:message key="page.main.title"/>${modelGlobalData.title ne null ? ' : '.concat(modelGlobalData.title) : ''}</title>
+    <link rel="icon" href="<c:url value="/resources/image/favicon.ico"/>" type="image/x-icon">
+    <link rel="shortcut icon" href="<c:url value="/resources/image/favicon.ico"/>" type="image/x-icon">
+
+    <%-- Plugin --%>
+
+    <%-- Font Awesome --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/fontawesome/all.css"/>"/>
+
+    <%-- jquery --%>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery/jquery-3.5.1.min.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery/jquery-migrate-3.3.2.min.js"/>"></script>
+
+    <%-- jquery-ui --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/jquery-ui/jquery-ui.min.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery-ui/jquery-ui.min.js"/>"></script>
+
+    <%-- jquery-inputmask --%>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery-inputmask/jquery.inputmask.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery-inputmask/inputmask.binding.js"/>"></script>
+
+    <%-- jquery-tree-menu --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/jquery-tree-menu/jquery.tree.list.view.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery-tree-menu/jquery.tree.list.view.js"/>"></script>
+
+    <%-- jquery-tree-select --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/jquery-tree-select/jquery.tree.chosen.css"/>">
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery-tree-select/jquery.tree.chosen.js"/>"></script>
+
+    <%-- ckeditor --%>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/ckeditor/ckeditor.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/ckeditor/adapters/jquery.js"/>"></script>
+
+    <%-- ERP global --%>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/common/Chart.min.js"/>"></script>
+
+    <%-- fullcalendar --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/fullcalendar/main.min.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/fullcalendar/main.min.js"/>"></script>
+
+    <%-- Fancybox --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/jquery-fancybox/jquery.fancybox.min.css" />" />
+    <script type="text/javascript" src="<c:url value="/resources/plugin/jquery-fancybox/jquery.fancybox.min.js" />"></script>
+
+    <%-- scrollbar --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/scrollbar/jquery.scrollbar.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/scrollbar/jquery.scrollbar.min.js"/>"></script>
+
+    <%-- treefactory --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/treefactory/jquery.treefactory.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/treefactory/jquery.treefactory.js"/>"></script>
+
+    <!-- dropdowntree -->
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/dropdowntree/jquery.dropdowntree.css"/>"/>
+    <script src="<c:url value="/resources/plugin/dropdowntree/jquery.dropdowntree.js"/>"></script>
+
+    <%-- tabulator --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/tabulator/tabulator_bootstrap4.min.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/plugin/tabulator/tabulator_theme.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/tabulator/tabulator.min.js"/>"></script>
+
+    <%-- common --%>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/common/jquery.modal.window.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/plugin/common/jquery.modal.filter.js"/>"></script>
+
+    <%-- Semantic UI --%>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/semantic-ui/semantic.min.css"/>"/>
+    <script type="text/javascript" src="<c:url value="/resources/semantic-ui/semantic.min.js"/>"></script>
+
+    <%-- Style --%>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/reset.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/default.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style/corp/init.css"/>"/>
+
+    <%-- Script --%>
+    <script type="text/javascript" src="<c:url value="/resources/script/variable.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/script/page.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/script/constant.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/script/corp/constant.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/script/function.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resources/script/init.js"/>"></script>
+</head>
+<body class="layout">
+    <div class="layout__page">
+        <div class="sidebar">
+            <div class="sidebar__header">
+                <a href="<c:url value="/corp/index"/>" class="sidebar__logo"><img src="<c:url value="/resources/image/logo.png"/>" /></a>
+                <div class="sidebar__switcher"></div>
+            </div>
+            <div class="site-menu">
+                <i class="fas fa-user-friends"></i>
+                <span class="site-menu__selected">Портал</span>
+                <i class="fas fa-chevron-down site-menu__arrow"></i>
+                <ul class="menu site-menu__items">
+                    <li class="site-menu__li"><a class="site-menu__a" href="<c:url value="/index"/>"><i class="fas fa-cog site-menu__icon"></i>ERP</a></li>
+                </ul>
+            </div>
+            <div class="menu-search"></div>
+            <nav class="sidebar__nav" data-source='${modelGlobalData.leftMenu}'></nav>
+        </div>
+        <div class="body">
+            <header class="site-header body__header">
+                <c:if test="${not empty modelGlobalData.topMenuList}">
+                    <nav class="header__nav">
+                        <ul class="menu header-menu">
+                            <c:forEach items="${modelGlobalData.topMenuList}" var="menuItem">
+                                <li class="header-menu__li"><i class="${menuItem.icon}"></i><a target="_blank" class="header-menu__a" href="${menuItem.href}">${menuItem.name}</a></li>
+                            </c:forEach>
+                        </ul>
+                    </nav>
+                </c:if>
+                <nav class="personal-nav header__personal-nav">
+                    <div class="personal-nav__bell">
+                        <div class="personal-nav__message-count">10</div>
+                        <i class="far fa-bell"></i>
+                    </div>
+                    <div class="personal-nav__divider"></div>
+                    <div class="personal-nav__menu">
+                        <i class="far fa-user-circle"></i>
+                        <div class="personal-menu">
+                            <span class="personal-menu__fio">${currentUser.userOfficialName}</span>
+                            <i class="fas fa-chevron-down personal-menu__arrow"></i>
+                            <ul class="menu personal-menu__items">
+                                <li class="personal-menu__li"><a class="personal-menu__a" href=""><i class="far fa-file-alt personal-menu__icon"></i>Администрирование</a></li>
+                                <li class="personal-menu__li"><a class="personal-menu__a" href=""><i class="fas fa-cog personal-menu__icon"></i>Настройки</a></li>
+                                <li class="personal-menu__li"><a class="personal-menu__a" href="<c:url value="/auth?logout"/>"><i class="fas fa-sign-out-alt personal-menu__icon"></i>Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="workarea">
+                <div class="workarea-preloader ui inverted dimmer">
+                    <div class="ui text slow loader blue"></div>
+                </div>
+                <div class="content">

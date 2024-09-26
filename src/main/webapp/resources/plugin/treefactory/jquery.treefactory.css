@@ -1,0 +1,216 @@
+.tf-menu {
+    margin-top: 16px;
+}
+.tf-menu__container {
+    height: calc(100vh - 230px);
+}
+.tf-menu__item,
+.tf-menu__item-parent {
+    position: relative;
+    display: flex;
+    min-height: 40px;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-bottom: 2px;
+    padding: 4px 15px 4px 0;
+    font-size: 14px;
+    align-items: center;
+    cursor: pointer;
+}
+.tf-menu__item-wrapper {
+    max-width: 210px;
+    display: block;
+    line-height: 1;
+}
+.tf-menu__item:hover:before,
+.tf-menu__item-parent:hover:before,
+.tf-menu__item_selected:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #309DCB;
+}
+
+.tf-menu__item:hover,
+.tf-menu__item-parent:hover,
+.tf-menu__item_selected {
+    background: rgba(30, 73, 107, 0.8);
+    color: #FFFFFF;
+}
+.tf-menu__parent-icon {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px 15px 10px 10px;
+}
+.tf-menu__icon-mind {
+    position: absolute;
+    left: 30px;
+    top:14px;
+}
+.tf-menu__item_selected,
+.tf-menu__item_selected:hover {
+    color: #309DCB;
+}
+.tf-menu__item_pointer {
+    color: #309DCB;
+    font-weight: bold;
+    font-style: italic;
+}
+.tf-menu__inner_hidden {
+    display: none;
+}
+
+/** search input */
+
+.tf-search {
+    position: relative;
+    width: 227px;
+    height: 34px;
+    border: 1px solid #309DCB;
+    border-radius: 4px;
+    margin: 0 auto 45px;
+}
+.tf-search__input {
+    border: 0;
+    outline: none;
+    padding-left: 45px;
+    width: 225px;
+    height: 32px;
+    background: #1E496B;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #BACDDD;
+    border-radius: 4px;
+}
+.tf-search__input::placeholder {
+    color: #BACDDD;
+    font-size: 12px;
+    line-height: 14px;
+}
+.tf-search__icon {
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    color: #309DCB;
+    top: 9px;
+    left: 16px;
+}
+
+/** end search input */
+
+/** checkbox switcher */
+
+.tf-switcher.checkbox {
+    height: 1.4rem;
+    width: 2.7rem;
+    position: relative;
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 0;
+    vertical-align: baseline;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 18px;
+    margin-left: 20px;
+}
+.tf-switcher.checkbox input {
+    width: 2.7rem;
+    height: 1rem;
+    z-index: -1;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    outline: 0;
+}
+.tf-switcher.checkbox input+label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tf-switcher.checkbox label {
+    height: 1rem;
+    display: block;
+    font-size: 1em;
+    outline: 0;
+    position: relative;
+}
+.tf-switcher.checkbox label:before {
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    -webkit-transform: none;
+    transform: none;
+    border: none;
+    top: 0;
+    background: rgba(215, 227, 237, 0.75);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 2.7rem;
+    height: 1rem;
+    border-radius: 500rem;
+}
+.tf-switcher.checkbox label:after {
+    background-color: #309DCB;
+    position: absolute;
+    content: '' !important;
+    opacity: 1;
+    z-index: 2;
+    border: none;
+    width: 1.45rem;
+    height: 1.45rem;
+    top: -3px;
+    left: 0;
+    border-radius: 500rem;
+    -webkit-transition: background 0.3s ease, left 0.3s ease;
+    transition: background 0.3s ease, left 0.3s ease;
+}
+.tf-switcher.checkbox input ~ label:after {
+    left: -0.05rem;
+}
+.tf-switcher.checkbox label:hover::before {
+    background-color: rgba(215, 227, 237, 0.65);
+    border: none;
+}
+.tf-switcher.checkbox input:checked ~ label:before {
+    background-color: #2483AC !important;
+}
+.tf-switcher.checkbox input:checked ~ label:after {
+    left: 1.25rem;
+}
+.tf-switcher.checkbox input:focus:checked ~ label:before {
+    background-color: #2483AC !important;
+}
+
+/** end checkbox switcher */
+
+/** closed menu */
+
+.tf-closed-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.tf-closed-menu__li {
+    margin-bottom: 10px;
+    margin-left: 26px;
+}
+.tf-closed-menu__a {
+    font-size: 20px;
+}
+
+/** end closed menu */

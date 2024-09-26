@@ -1,0 +1,27 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/*.war
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+/nb-configuration.xml
+target/
+/nbproject/
+
+### Eclipse ###
+.settings
+.classpath
+.factorypath
+.project
+.tern-project
+cd
+
+### Wildfly ###
+wildfly/

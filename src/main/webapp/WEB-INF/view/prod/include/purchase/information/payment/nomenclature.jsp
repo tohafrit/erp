@@ -1,0 +1,1 @@
+<h1 class="b-heading"><fmt:message key="purchase.menu.payment.nomenclature"/></h1>

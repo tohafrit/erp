@@ -1,0 +1,67 @@
+.tlv__root li {
+    list-style: none;
+    padding-left: 12px;
+    padding-top: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.tlv__root, .tlv__root ul {
+    padding-left: 12px;
+}
+.tlv__root i.tlv__node-expand-toggle,
+.tlv__root i.tlv__node-collapse-toggle {
+    cursor:pointer;
+}
+.tlv__root li > span,
+.tlv__root li > a {
+    padding: 3px;
+    color: #315c83;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.tlv__root i {
+    color: #315c83;
+    width: 6pt;
+}
+.tlv__root i.tlv__node-empty-toggle {
+    font-size: 4px;
+    vertical-align: middle;
+}
+/* fill style */
+.tlv__root li > span.tlv__style-fill:hover,
+.tlv__root li > a.tlv__style-fill:hover {
+    color: #91a8c0;
+    border-color: #91a8c0;
+    border-radius: 4px;
+}
+.tlv__root li.tlv__selected-node > span.tlv__style-fill,
+.tlv__root li.tlv__selected-node > a.tlv__style-fill {
+    background: #91a8c0;
+    color: #f6f6f6;
+    border-color: #91a8c0;
+    border-radius: 4px;
+}
+/* underline style */
+.tlv__root li.tlv__selected-node > span.tlv__style-underline,
+.tlv__root li > span.tlv__style-underline:hover,
+.tlv__root li.tlv__selected-node > a.tlv__style-underline,
+.tlv__root li > a.tlv__style-underline:hover {
+    color: #91a8c0;
+    border-bottom: 1px solid #315c83;
+}
+.tlv__root li.tlv__search-found-node > span,
+.tlv__root li.tlv__search-found-node > a {
+    border: 1px solid #315c83;
+    border-radius: 4px;
+}
+
+/* sortable */
+.tlv__root .highlighter {
+    color: #f6f6f6;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    border: 1px dashed #e1e1e1;
+    background-color:#91a8c0;
+}
